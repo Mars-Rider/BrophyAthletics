@@ -11,6 +11,7 @@
     //Date/Num: cms-bb-sport-events-date
     //Year: cms-bb-sport-events-year
 
+#include <algorithm>
 #include <iostream>
 #include <fstream>
 #include <string>
