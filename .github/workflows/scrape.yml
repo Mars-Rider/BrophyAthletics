@@ -20,6 +20,10 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Create api.h file
+        run: |
+          echo '#define MRSCRAPER_API_KEY "${{ secrets.MRSCRAPER_API_KEY }}"' > api.h
+
       - name: Compile and Run C++ Scraper
         run: |
           g++ -std=c++17 scraper.cpp -o event_scraper
