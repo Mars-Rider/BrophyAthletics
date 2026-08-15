@@ -19,8 +19,8 @@
 #include <vector>
 #include <cstdlib>
 #include <iomanip>
+#include <cstdlib> // Needed for std::getenv
 
-#include "api.h"
 
 struct Event {
     std::string team;
@@ -39,15 +39,23 @@ struct Event {
     std::string end_time;
 };
 
-// 1. Download HTML using macOS/Linux built-in curl
-// 1. Download HTML using MrScraper API bypass
 std::string fetchHTML() {
-    // The properly escaped curl command routing through the MrScraper API
-    std::string command = std::string("curl -s --location 'https://api.mrscraper.com?token=") + 
-                      MRSCRAPER_API_KEY + 
-                      "&geoCode=us&html=true&proxyCountry=us&url=https%3A%2F%2Fwww.brophyprep.org%2Fathletics' -H 'x-api-token: " + 
-                      MRSCRAPER_API_KEY + 
-                      "' > temp_page.html";
+    // Ask the operating system for the secret key
+    const char* envKey = std::getenv("MRSCRAPER_API_KEY");
+    
+    if (envKey == nullptr) {
+        std::cerr << "Error: API key environment variable not found!" << std::endl;
+        exit(1);
+    }
+    
+    std::string apiKey(envKey);
+
+    // Now you can easily use the standard + operator without macro errors
+    std::string command = "curl -s --location 'https://api.mrscraper.com?token=" + 
+                          apiKey + 
+                          "&geoCode=us&html=true&proxyCountry=us&url=https%3A%2F%2Fwww.brophyprep.org%2Fathletics' -H 'x-api-token: " + 
+                          apiKey + 
+                          "' > temp_page.html";    
                           
     system(command.c_str());
 

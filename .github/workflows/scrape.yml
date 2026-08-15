@@ -20,14 +20,15 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Create api.h file
-        run: |
-          echo '#define MRSCRAPER_API_KEY "${{ secrets.MRSCRAPER_API_KEY }}"' > api.h
-
-      - name: Compile and Run C++ Scraper
-        run: |
-          g++ -std=c++17 scraper.cpp -o event_scraper
-          ./event_scraper
+      - name: Compile C++ Code
+        # Notice we don't need api.h anymore! Just compile normally.
+        run: g++ -std=c++11 scraper.cpp -o scraper
+        
+      - name: Run Scraper
+        env:
+          # This securely hands the key directly to std::getenv in C++
+          MRSCRAPER_API_KEY: ${{ secrets.MRSCRAPER_API_KEY }}
+        run: ./scraper
 
       - name: Commit and Push Updated calendar.ics
         run: |
