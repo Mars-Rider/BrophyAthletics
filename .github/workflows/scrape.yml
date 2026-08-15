@@ -1,0 +1,34 @@
+name: Auto-Scrape Shifted Edit Calendar
+
+on:
+  push:
+    branches:
+      - main  # (or master, depending on what your main branch is called)
+  schedule:
+    # Runs automatically every day at midnight UTC (5:00 PM Arizona Time)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Lets you click a "Run workflow" button to test it immediately!
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compile and Run C++ Scraper
+        run: |
+          g++ -std=c++17 scraper.cpp -o event_scraper
+          ./event_scraper
+
+      - name: Commit and Push Updated calendar.ics
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add calendar.ics
+          git commit -m "Daily calendar update" || echo "No changes to commit"
+          git push
