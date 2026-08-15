@@ -2,4 +2,184 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Brophy Prep Athletics C++ Scraper//EN
 CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:brophy-prep-event-0@mycustomdomain.com
+DTSTART:20260811T150000
+DTEND:20260811T170000
+SUMMARY:Varsity Golf vs. Desert Vista High School, Apollo High School
+LOCATION:Phoenix Country Club
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-1@mycustomdomain.com
+DTSTART:20260818T150000
+DTEND:20260818T170000
+SUMMARY:Varsity Golf vs. Apollo High School, Corona Del Sol High School
+LOCATION:Palmbrook Golf Club
+DESCRIPTION:Away
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-2@mycustomdomain.com
+DTSTART:20260820T190000
+DTEND:20260820T210000
+SUMMARY:Varsity Football vs. Pinnacle High School
+LOCATION:BSC Artificial Turf Field
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-3@mycustomdomain.com
+DTSTART:20260825T150000
+DTEND:20260825T170000
+SUMMARY:Varsity Golf vs. Corona Del Sol High School, Sunnyslope High School
+LOCATION:Lookout Mountain Golf Course
+DESCRIPTION:Away
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-4@mycustomdomain.com
+DTSTART:20260826T130000
+DTEND:20260826T150000
+SUMMARY:Varsity Golf vs. None
+LOCATION:Papago Golf Course
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-5@mycustomdomain.com
+DTSTART:20260826T180000
+DTEND:20260826T200000
+SUMMARY:Freshman Football vs. Pinnacle High School
+LOCATION:BSC Artificial Turf Field
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-6@mycustomdomain.com
+DTSTART:20260826T180000
+DTEND:20260826T200000
+SUMMARY:JV Football vs. Pinnacle High School
+LOCATION:Pinnacle High School
+DESCRIPTION:Away
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-7@mycustomdomain.com
+DTSTART:20260827T130000
+DTEND:20260827T150000
+SUMMARY:Varsity Golf vs. None
+LOCATION:Papago Golf Course
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-8@mycustomdomain.com
+DTSTART:20260827T190000
+DTEND:20260827T210000
+SUMMARY:Varsity Football vs. Hamilton High School
+LOCATION:Central High School
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-9@mycustomdomain.com
+DTSTART:20260901T130000
+DTEND:20260901T150000
+SUMMARY:Varsity Golf vs. Desert Vista High School, Corona Del Sol High School
+LOCATION:Phoenix Country Club
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-10@mycustomdomain.com
+DTSTART:20260901T180000
+DTEND:20260901T200000
+SUMMARY:Freshman White Football vs. Liberty High School
+LOCATION:BSC Artificial Turf Field
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-11@mycustomdomain.com
+DTSTART:20260902T180000
+DTEND:20260902T200000
+SUMMARY:Freshman Football vs. Boulder Creek High School
+LOCATION:Boulder Creek High School
+DESCRIPTION:Away
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-12@mycustomdomain.com
+DTSTART:20260903T160000
+DTEND:20260903T180000
+SUMMARY:Varsity Swimming vs. Arizona College Preparatory
+LOCATION:Aquatic Center
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-13@mycustomdomain.com
+DTSTART:20260903T180000
+DTEND:20260903T200000
+SUMMARY:JV Football vs. Boulder Creek High School
+LOCATION:BSC Artificial Turf Field
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-14@mycustomdomain.com
+DTSTART:20260904T190000
+DTEND:20260904T210000
+SUMMARY:Varsity Football vs. Boulder Creek High School
+LOCATION:Boulder Creek High School
+DESCRIPTION:Away
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-15@mycustomdomain.com
+DTSTART:20260905T080000
+DTEND:20260905T100000
+SUMMARY:Varsity Cross Country vs. None
+LOCATION:Paloma Community Park
+DESCRIPTION:Neutral
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-16@mycustomdomain.com
+DTSTART:20260908T130000
+DTEND:20260908T150000
+SUMMARY:Varsity Golf vs. Desert Vista High School, Millennium High School
+LOCATION:Raven Golf Club
+DESCRIPTION:Away
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-17@mycustomdomain.com
+DTSTART:20260908T180000
+DTEND:20260908T200000
+SUMMARY:Freshman Football vs. Queen Creek High School
+LOCATION:BSC Artificial Turf Field
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-18@mycustomdomain.com
+DTSTART:20260909T160000
+DTEND:20260909T180000
+SUMMARY:Varsity Beach Volleyball vs. Casteel High School
+LOCATION:Xavier College Preparatory
+DESCRIPTION:Home
+
+END:VEVENT
+BEGIN:VEVENT
+UID:brophy-prep-event-19@mycustomdomain.com
+DTSTART:20260909T180000
+DTEND:20260909T200000
+SUMMARY:JV Football vs. Queen Creek High School
+LOCATION:Queen Creek High School
+DESCRIPTION:Away
+
+END:VEVENT
 END:VCALENDAR
