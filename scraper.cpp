@@ -43,12 +43,11 @@ struct Event {
 // 1. Download HTML using MrScraper API bypass
 std::string fetchHTML() {
     // The properly escaped curl command routing through the MrScraper API
-// We use std::string() around the first part so C++ knows we are doing string math with the + operator
     std::string command = std::string("curl -s --location 'https://api.mrscraper.com?token=") + 
-                          MRSCRAPER_API_KEY + 
-                          "&geoCode=us&html=true&proxyCountry=us&url=https%3A%2F%2Fwww.brophyprep.org%2Fathletics' -H 'x-api-token: " + 
-                          MRSCRAPER_API_KEY + 
-                          "' > temp_page.html";
+                      MRSCRAPER_API_KEY + 
+                      "&geoCode=us&html=true&proxyCountry=us&url=https%3A%2F%2Fwww.brophyprep.org%2Fathletics' -H 'x-api-token: " + 
+                      MRSCRAPER_API_KEY + 
+                      "' > temp_page.html";
                           
     system(command.c_str());
 
